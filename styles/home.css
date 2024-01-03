@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap");
+body header nav {
+  position: fixed;
+  width: 100%;
+  background-color: #1F2E35;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+body header nav .container .main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+body header nav .container .main-nav .menu-btns {
+  display: flex;
+  gap: 89px;
+  align-items: center;
+}
+body header nav .container .main-nav .menu-btns ul {
+  display: flex;
+  gap: 77px;
+}
+body header nav .container .main-nav .menu-btns ul li a {
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 32px;
+  color: white;
+}
+body header nav .container .main-nav .menu-btns ul .active {
+  font-weight: 600;
+}
+body header nav .container .main-nav .menu-btns .btns {
+  display: flex;
+  gap: 15px;
+}
+body header nav .container .main-nav .menu-btns .btns a {
+  text-transform: capitalize;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.5px;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  background: #0086D6;
+  padding: 10px 20px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
