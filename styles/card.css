@@ -1,0 +1,67 @@
+.card {
+  cursor: pointer;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card .card-body .card-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-body .card-heading h3 {
+  color: #333E44;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 150%; /* 42px */
+}
+.card .card-body .card-heading span {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+.card .card-body .card-heading .free {
+  color: #20C08B;
+}
+.card .card-body .card-heading .premium {
+  color: #FFC942;
+}
+.card .card-body .card-heading .free30 {
+  color: #009BFF;
+}
+.card .card-body .card-text {
+  color: #475E69;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-bottom: 1rem;
+}
+.card .card-body .marks {
+  display: flex;
+  gap: 1rem;
+}
+.card .card-body .marks .mark {
+  border-radius: 4px;
+  background: #E1EBFB;
+  display: inline-block;
+  padding: 0 10px;
+}
+.card .card-body .marks .mark span {
+  color: #0086D6;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+}
+
+.card:hover {
+  box-shadow: 0px 32px 56px 0px rgba(0, 0, 0, 0.08);
+}
+
+/*# sourceMappingURL=card.css.map */
