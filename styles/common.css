@@ -1,0 +1,39 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+.section-heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.section-subheading {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
