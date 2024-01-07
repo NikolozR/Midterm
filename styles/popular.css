@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap");
+@import url(../styles/interFont.css);
+body main {
+  margin: 80px 0 63px 0;
+}
+body main .hero {
+  background-color: #1F2E35;
+  padding: 156px 0;
+  background-image: url(../assets/dashboard.png), url(../assets/boards.png), url(../assets/chatbot.png);
+  background-repeat: no-repeat;
+  background-position: top 0 left 50%, top 176px left 11%, top 160px right 10%;
+  background-size: 43.5%;
+}
+body main .hero .container h1, body main .hero .container h4, body main .hero .container a {
+  color: #FFF;
+  font-family: Poppins;
+  text-align: center;
+}
+body main .hero .container h4, body main .hero .container a {
+  font-size: 20px;
+}
+body main .hero .container h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 32px; /* 80% */
+  letter-spacing: 0.2px;
+  margin-bottom: 24px;
+}
+body main .hero .container h4 {
+  line-height: 150%; /* 30px */
+  margin-bottom: 36px;
+}
+body main .hero .container a {
+  display: inline-block;
+  margin: auto;
+  line-height: 61px; /* 305% */
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  border-radius: 8px;
+  background: #0086D6;
+  padding: 0 27px 5px 27px;
+}
+body main .hero .container .hero-explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .most-popular {
+  padding-top: 51px;
+}
+body main .most-popular .container .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 31px;
+  row-gap: 50px;
+}
+body main .most-popular .container .card-grid .card {
+  padding: 20px 21px 21px 20px;
+  width: 100%;
+}
+body main .most-popular .container .card-grid .card .img-wrapper {
+  height: 187px;
+  border-radius: 5px;
+  background: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .most-popular .container .card-grid .card .card-body .card-heading {
+  margin: 28px 0 8px 0;
+}
+body main .most-popular .container .grid-nav {
+  display: flex;
+  gap: 4px;
+  margin-top: 70px;
+  justify-content: center;
+}
+body main .most-popular .container .grid-nav input[type=radio] {
+  display: none;
+}
+body main .most-popular .container .grid-nav .grid-nav-el {
+  color: #1F2E35;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px; /* 160% */
+  letter-spacing: 0.2px;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #FFF;
+  cursor: pointer;
+  padding: 4px 14px;
+  text-align: center;
+}
+body main .most-popular .container .grid-nav label {
+  width: 40px;
+}
+body main .most-popular .container .grid-nav input[type=radio]:checked + label {
+  color: white;
+  background: #1F2E35;
+  width: 40px;
+}
+
+/*# sourceMappingURL=popular.css.map */

@@ -98,6 +98,7 @@ body footer .main-footer .container .footer-content .logos .socials .social-circ
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 body footer .main-footer .container .footer-content ul:before {
   content: attr(aria-label);
