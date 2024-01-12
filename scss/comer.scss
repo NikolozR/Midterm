@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap');
+@import url(../styles/interFont.css);
+
+body {
+    main {
+        margin-bottom: 75px;
+        .hero {
+            background: #1F2E35;
+            padding: 31px 0;
+            .sub-hero {
+                background-image: url(../assets/comerBack.png);
+                background-size: cover;
+                padding: 128px 0;
+                .container {
+                    .hero-wrapper {
+                        h1, h4, a {
+                            color: #FFF;
+                            font-family: Poppins;
+                            text-align: center;
+                        }
+                        h4, a {
+                            font-size: 20px;
+                        }
+                        h1 {
+                            font-weight: 600;
+                            font-size: 40px;
+                            line-height: 32px; /* 80% */
+                            letter-spacing: 0.2px;
+                            margin-bottom: 24px;
+                        }
+                        h4 {
+                            line-height: 150%; /* 30px */
+                            margin-bottom: 36px;
+                        }
+                        a {
+                            display: inline-block;
+                            margin: auto;
+                            line-height: 61px; /* 305% */
+                            letter-spacing: 0.2px;
+                            text-transform: capitalize;
+                            border-radius: 8px;
+                            background: #0086D6;
+                            padding: 0 27px 5px 27px;
+                        }
+                        .hero-explore {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        .new-comer {
+            .container {
+                .card-grid {
+                    margin: 54px 0 73px 0;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 50px;
+                    row-gap: 50px;
+                    .card {
+                        width: 100%;
+                        display: flex;
+                        gap: 24px;
+                        align-items: center;
+                        padding: 24px 24px 29px 24px;
+
+                        .card-body {
+                            .card-heading {
+                                margin-bottom: 8px;
+                            }
+                        }
+
+                        .img-wrapper {
+                            min-width: 120px;
+                            height: 120px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 4px;
+                            background: #F5F5F5;
+                        }
+
+                        .marks {
+                            .mark {
+                                span {
+                                    color: #335EF7;
+                                }
+                            }
+                        }
+                    }
+                }
+                .grid-nav {
+                    display: flex;
+                    gap: 4px;
+                    margin-top: 70px;
+                    justify-content: center;
+                    input[type=radio] {
+                        display: none;
+                    }
+                    .grid-nav-el {
+                        color: #1F2E35;
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 32px; /* 160% */
+                        letter-spacing: 0.2px;
+                        border-radius: 2px;
+                        border: 1px solid rgba(0, 0, 0, 0.20);
+                        background: #FFF;
+                        cursor: pointer;
+                        padding: 4px 14px;
+                        text-align: center;
+                    }
+                    label {
+                        width: 40px;
+                    }
+                    input[type=radio]:checked + label {
+                        color: white;
+                        background: #1F2E35;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

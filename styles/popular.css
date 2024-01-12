@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap");
 @import url(../styles/interFont.css);
 body main {
-  margin: 80px 0 63px 0;
+  margin-bottom: 63px;
 }
 body main .hero {
   background-color: #1F2E35;

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>About Us</title>
     <link rel="icon" href="../assets/logo.svg">
-    <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/navbar.css">
-    <link rel="stylesheet" href="../styles/signup.css">
+    <link rel="stylesheet" href="../styles/about.css">
     <link rel="stylesheet" href="../styles/footer.css">
 </head>
 
@@ -30,12 +30,12 @@
                             <li>
                                 <a href="./comer.html">New Comer</a>
                             </li>
-                            <li>
-                                <a href="./about.html">about</a>
+                            <li class="active">
+                                <a href="#">about</a>
                             </li>
                         </ul>
                         <div class="btns">
-                            <a href="#">sign up</a>
+                            <a href="./register.html">sign up</a>
                             <a href="">login</a>
                         </div>
                     </div>
@@ -44,56 +44,75 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="form-with-headings">
-                <h1>Welcome, let's create an account</h1>
-                <h4>Create an account to keep track of your customers, and contributors. Once your account has been
-                    created then don’t forget to verify your account through mail.</h4>
-                <form action="" method="post">
-                    <div class="name-surname">
-                        <div class="name">
-                            <label for="fname">First Name</label>
-                            <input type="text" name="fname" id="fname" placeholder="Your first name">
-                        </div>
-                        <div class="surname">
-                            <label for="lname">Last Name</label>
-                            <input type="text" name="lname" id="lname" placeholder="Your last name">
-                        </div>
-                    </div>
-                    <label for="email">Work Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your work email">
-                    <label for="country">Country</label>
-                    <select name="country" id="country">
-                        <option value="USA">United States of America</option>
-                        <option value="GEO">Georgia</option>
-                        <option value="ARM">Armenia</option>
-                        <option value="DEU">Germany</option>
-                        <option value="FRA">France</option>
-                        <option value="GBR">United Kingdom</option>
-                    </select>
-                    <label for="infoSource" id="infoSource">Where did you first hear about DestLab?</label>
-                    <select name="infoSource" id="infoSource">
-                        <option value="" selected disabled>Select an option...</option>
-                        <option value="Google">Google</option>
-                        <option value="Social Media">Social Media</option>
-                        <option value="Friend/Family">Friend/Family</option>
-                        <option value="Advertisement">Advertisement</option>
-                        <option value="Website">Website</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Must be at least 8 characters.">
-                    <p class="terms-policy">By continuing you agree to the DestLab <a href="">terms of service</a> and <a href="">privacy
-                            policy</a>.</p>
-                    <div class="submit-already">
-                        <button type="submit">Continue</button>
-                        <p>Already registered? <a href="">Sign In</a></p>
-                    </div>
-                </form>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <h1>We enable designer & developers
+                        to <span>build amazing things</span></h1>
+                    <p>We have transformed product development, making it faster, simpler... better! That's why in just
+                        three years we now help more developers build projects than anyone else.</p>
+                </div>
             </div>
-        </div>
+        </section>
+        <section class="growing">
+            <div class="container">
+                <div class="growing-wrapper">
+                    <h2>Simple is growing. Grow with us.</h2>
+                    <p>On Gear, moments of frustration are replaced with simple features that support your every twist and turn,
+                        so you can focus on the work that matters.</p>
+                    <div class="team-imgs">
+                        <img src="../assets/black1.png" alt="Team photo">
+                        <img src="../assets/black2.png" alt="Team photo">
+                        <img src="../assets/black3.png" alt="Team photo">
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section class="employees">
+            <div class="container">
+                <h2>The humans behind the product</h2>
+                <p class="team-subheading">Most popular tools for designer and developer</p>
+                <div class="employee-cards">
+                    <div class="employee">
+                        <img src="../assets/bigWahidAri.png" alt="Wahid Ari profile">
+                        <p class="name">Wahid Ari</p>
+                        <p class="position">CEO & Co-founder
+                        </p>
+                        <p class="description">known as one of the most visionary legal tech entrepreneurs worldwide. </p>
+                        <div class="social-links">
+                            <a href="">Github</a>
+                            -
+                            <a href="">Linkedin</a>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <img src="../assets/bigAri.png" alt="Ari Profile">
+                        <p class="name">Ari</p>
+                        <p class="position">Head of Design
+                        </p>
+                        <p class="description">expert on distributed work culture, cross-functional product teams and the future of work.</p>
+                        <div class="social-links">
+                            <a href="">Github</a>
+                            -
+                            <a href="">Linkedin</a>
+                        </div>
+                    </div>
+                    <div class="employee">
+                        <img src="../assets/bigWahid.png" alt="Wahid profile">
+                        <p class="name">Wahid</p>
+                        <p class="position">Front-end Engineer
+                        </p>
+                        <p class="description">expert on legal innovation, engages actively in debates, and frequently publishes about client-driven</p>
+                        <div class="social-links">
+                            <a href="">Github</a>
+                            -
+                            <a href="">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
 
     <footer>
         <div class="footer-subscription">
@@ -131,7 +150,7 @@
                         </div>
                     </div>
                     <ul class="resource" aria-label="Resource">
-                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">FAQ</a></li>

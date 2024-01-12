@@ -29,9 +29,8 @@ $black-grey: #3D3D3D;
 
 
 body {
-    .temporary {
+    main {
         .hero {
-            margin-top: 80px;
             background-color: $black;
             padding: 112px 0 112px 0;
 
@@ -204,318 +203,316 @@ body {
             }
         }
 
-        main {
-            .section-defaults {
-                .section-heading {
-                    color: #333E44;
+        .section-defaults {
+            .section-heading {
+                color: #333E44;
+            }
+
+            .section-subheading {
+                color: #475E69;
+            }
+
+            .select-wrapper {
+                display: flex;
+                justify-content: center;
+
+                .select-all {
+                    color: #FFF;
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 32px;
+                    /* 160% */
+                    letter-spacing: 0.2px;
+                    border-radius: 8px;
+                    background: #333E44;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                    padding: 7px 47px 6px 44px;
+                }
+            }
+        }
+
+        .popular-tools {
+            margin-top: 70px;
+
+            .container {
+                .statistics {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    column-gap: 30px;
+
+                    .statistic {
+                        max-width: 100%;
+                        padding: 24px 49px 22px 49px;
+
+                        .number {
+                            text-align: center;
+                            color: #0086D6;
+                            font-family: Poppins;
+                            font-size: 32px;
+                            font-weight: 600;
+                            line-height: 150%;
+                            margin-bottom: 8px;
+                        }
+
+                        h3 {
+                            text-align: center;
+                            color: #333E44;
+                            font-family: Poppins;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 150%;
+                            margin-bottom: 1rem;
+                        }
+
+                        .statistic-text {
+                            color: #475E69;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 155%;
+                            /* 27.9px */
+                        }
+                    }
+
+                    .statistic:nth-child(2) {
+                        .number {
+                            color: #2BA093;
+                        }
+                    }
+
+                    .statistic:nth-child(3) {
+                        .number {
+                            color: #F36;
+                        }
+                    }
                 }
 
-                .section-subheading {
-                    color: #475E69;
-                }
+                .popular {
+                    margin-top: 120px;
 
-                .select-wrapper {
-                    display: flex;
-                    justify-content: center;
+                    .card-grid {
+                        display: grid;
+                        grid-template-columns: 1fr auto 1fr;
+                        column-gap: 1rem;
+                        margin: 42px 0 39px 0;
 
-                    .select-all {
-                        color: #FFF;
-                        font-family: Poppins;
-                        font-size: 20px;
-                        font-weight: 500;
-                        line-height: 32px;
-                        /* 160% */
-                        letter-spacing: 0.2px;
-                        border-radius: 8px;
-                        background: #333E44;
-                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-                        padding: 7px 47px 6px 44px;
+                        .card {
+                            height: fit-content;
+                            align-self: center;
+                            width: 360px;
+                            max-width: 100%;
+                            padding: 20px 21px 21px 20px;
+
+                            .card-body {
+                                .card-heading {
+                                    margin: 28px 0 8px 0;
+                                }
+                            }
+
+                            .img-wrapper {
+                                border-radius: 5px;
+                                background: #F5F5F5;
+                                padding: 44px 0;
+                                display: flex;
+                                justify-content: center;
+                            }
+
+                        }
+
+                        .middle {
+                            height: 100%;
+                            padding-bottom: 43px;
+                            width: 100%;
+                        }
                     }
                 }
             }
+        }
 
-            .popular-tools {
-                margin-top: 70px;
+        .comer-tools {
+            background: #F9F9F9;
 
-                .container {
-                    .statistics {
+            .container {
+                .popular {
+                    padding: 50px 0 51px 0;
+                    margin-top: 79px;
+
+                    .card-grid {
+                        margin: 53px 0 50px 0;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        row-gap: 50px;
+                        column-gap: 50px;
+
+                        .card {
+                            display: flex;
+                            gap: 24px;
+                            align-items: center;
+                            padding: 24px 24px 29px 24px;
+
+                            .card-body {
+                                .card-heading {
+                                    margin-bottom: 8px;
+                                }
+                            }
+
+                            .img-wrapper {
+                                min-width: 120px;
+                                height: 120px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 4px;
+                                background: #F5F5F5;
+                            }
+
+                            .marks {
+                                .mark {
+                                    span {
+                                        color: #335EF7;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .trusted {
+            padding: 88px 0 30px 0;
+            margin-bottom: 50px;
+
+            .container {
+                .brands {
+                    .section-heading {}
+
+                    .section-subheading {}
+
+                    .brand-grid {
+                        margin-top: 2rem;
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
                         column-gap: 30px;
 
-                        .statistic {
-                            max-width: 100%;
-                            padding: 24px 49px 22px 49px;
+                        .brand {
+                            width: 100%;
+                            cursor: pointer;
+                            display: flex;
+                            padding: 2rem 13px 0 18px;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
 
-                            .number {
-                                text-align: center;
-                                color: #0086D6;
-                                font-family: Poppins;
-                                font-size: 32px;
-                                font-weight: 600;
-                                line-height: 150%;
-                                margin-bottom: 8px;
+                            img {
+                                margin-bottom: 20px;
                             }
 
-                            h3 {
-                                text-align: center;
-                                color: #333E44;
-                                font-family: Poppins;
-                                font-size: 24px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: 150%;
-                                margin-bottom: 1rem;
-                            }
-
-                            .statistic-text {
+                            p {
                                 color: #475E69;
                                 text-align: center;
-                                font-family: Poppins;
-                                font-size: 18px;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-style: normal;
                                 font-weight: 400;
-                                line-height: 155%;
-                                /* 27.9px */
+                                line-height: 28px;
+                                /* 175% */
+                                letter-spacing: 0.3px;
                             }
                         }
 
-                        .statistic:nth-child(2) {
-                            .number {
-                                color: #2BA093;
-                            }
-                        }
-
-                        .statistic:nth-child(3) {
-                            .number {
-                                color: #F36;
-                            }
-                        }
-                    }
-
-                    .popular {
-                        margin-top: 120px;
-
-                        .card-grid {
-                            display: grid;
-                            grid-template-columns: 1fr auto 1fr;
-                            column-gap: 1rem;
-                            margin: 42px 0 39px 0;
-
-                            .card {
-                                height: fit-content;
-                                align-self: center;
-                                width: 360px;
-                                max-width: 100%;
-                                padding: 20px 21px 21px 20px;
-
-                                .card-body {
-                                    .card-heading {
-                                        margin: 28px 0 8px 0;
-                                    }
-                                }
-
-                                .img-wrapper {
-                                    border-radius: 5px;
-                                    background: #F5F5F5;
-                                    padding: 44px 0;
-                                    display: flex;
-                                    justify-content: center;
-                                }
-
-                            }
-
-                            .middle {
-                                height: 100%;
-                                padding-bottom: 43px;
-                                width: 100%;
-                            }
+                        .brand:hover {
+                            border-radius: 8px;
+                            background: var(--Light-White, #FFF);
+                            box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.10);
                         }
                     }
                 }
             }
+        }
 
-            .comer-tools {
-                background: #F9F9F9;
+        .testimonials {
+            background: #F9F9F9;
+            padding: 50px 0 72px 0;
 
-                .container {
-                    .popular {
-                        padding: 50px 0 51px 0;
-                        margin-top: 79px;
-
-                        .card-grid {
-                            margin: 53px 0 50px 0;
-                            display: grid;
-                            grid-template-columns: 1fr 1fr;
-                            row-gap: 50px;
-                            column-gap: 50px;
-
-                            .card {
-                                display: flex;
-                                gap: 24px;
-                                align-items: center;
-                                padding: 37px 23px 30px 24px;
-
-                                .card-body {
-                                    .card-heading {
-                                        margin-bottom: 8px;
-                                    }
-                                }
-
-                                .img-wrapper {
-                                    min-width: 120px;
-                                    height: 120px;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    border-radius: 4px;
-                                    background: #F5F5F5;
-                                }
-
-                                .marks {
-                                    .mark {
-                                        span {
-                                            color: #335EF7;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+            .container {
+                .testimonials-body {
+                    .section-subheading {
+                        margin-bottom: 43px;
                     }
-                }
-            }
 
-            .trusted {
-                padding: 88px 0 30px 0;
-                margin-bottom: 50px;
+                    .testimonial-grid {
+                        display: grid;
+                        grid-template-columns: 1fr auto 1fr;
+                        column-gap: 20px;
 
-                .container {
-                    .brands {
-                        .section-heading {}
+                        .testimonial {
+                            height: fit-content;
+                            align-self: center;
+                            width: 360px;
+                            max-width: 100%;
+                            padding: 24px 20px 25px 24px;
+                            border-radius: 8px;
+                            border: 1px solid #DEDEDE;
+                            background: var(--light-background, #FFF);
+                            box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.08);
 
-                        .section-subheading {}
+                            .stars {
+                                margin-bottom: 21px;
+                            }
 
-                        .brand-grid {
-                            margin-top: 2rem;
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            column-gap: 30px;
+                            .testimonial-text {
+                                color: #475E69;
+                                font-family: Poppins;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 27px;
+                                /* 168.75% */
+                                letter-spacing: 0.2px;
+                                margin-bottom: 10px;
+                            }
 
-                            .brand {
-                                width: 100%;
-                                cursor: pointer;
+                            .profile {
                                 display: flex;
-                                padding: 2rem 13px 0 18px;
-                                flex-direction: column;
                                 align-items: center;
-                                justify-content: center;
+                                gap: 1rem;
 
                                 img {
-                                    margin-bottom: 20px;
+                                    width: 64px;
+                                    height: 64px;
+                                    border-radius: 50%;
                                 }
 
-                                p {
-                                    color: #475E69;
-                                    text-align: center;
-                                    font-family: Inter;
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 28px;
-                                    /* 175% */
-                                    letter-spacing: 0.3px;
-                                }
-                            }
-
-                            .brand:hover {
-                                border-radius: 8px;
-                                background: var(--Light-White, #FFF);
-                                box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.10);
-                            }
-                        }
-                    }
-                }
-            }
-
-            .testimonials {
-                background: #F9F9F9;
-                padding: 50px 0 72px 0;
-
-                .container {
-                    .testimonials-body {
-                        .section-subheading {
-                            margin-bottom: 43px;
-                        }
-
-                        .testimonial-grid {
-                            display: grid;
-                            grid-template-columns: 1fr auto 1fr;
-                            column-gap: 20px;
-
-                            .testimonial {
-                                height: fit-content;
-                                align-self: center;
-                                width: 360px;
-                                max-width: 100%;
-                                padding: 24px 20px 25px 24px;
-                                border-radius: 8px;
-                                border: 1px solid #DEDEDE;
-                                background: var(--light-background, #FFF);
-                                box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.08);
-
-                                .stars {
-                                    margin-bottom: 21px;
-                                }
-
-                                .testimonial-text {
-                                    color: #475E69;
+                                .profile-body {
                                     font-family: Poppins;
-                                    font-size: 16px;
-                                    font-weight: 400;
-                                    line-height: 27px;
-                                    /* 168.75% */
+                                    line-height: 24px;
+                                    /* 133.333% */
                                     letter-spacing: 0.2px;
-                                    margin-bottom: 10px;
-                                }
 
-                                .profile {
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 1rem;
-
-                                    img {
-                                        width: 64px;
-                                        height: 64px;
-                                        border-radius: 50%;
+                                    .name {
+                                        color: #333E44;
+                                        font-size: 18px;
+                                        font-weight: 600;
                                     }
 
-                                    .profile-body {
-                                        font-family: Poppins;
-                                        line-height: 24px;
-                                        /* 133.333% */
-                                        letter-spacing: 0.2px;
-
-                                        .name {
-                                            color: #333E44;
-                                            font-size: 18px;
-                                            font-weight: 600;
-                                        }
-
-                                        .profession {
-                                            color: #30444E;
-                                            font-size: 14px;
-                                        }
+                                    .profession {
+                                        color: #30444E;
+                                        font-size: 14px;
                                     }
                                 }
                             }
+                        }
 
-                            .middle {
-                                height: 100%;
-                                width: 100%;
-                                padding-bottom: 40px;
+                        .middle {
+                            height: 100%;
+                            width: 100%;
+                            padding-bottom: 40px;
 
-                                .profile {
-                                    gap: 26px;
-                                }
+                            .profile {
+                                gap: 26px;
                             }
                         }
                     }

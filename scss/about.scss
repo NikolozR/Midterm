@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap');
+@import url(../styles/interFont.css);
+
+body {
+    main {
+        .hero {
+            margin-bottom: 100px;
+            position: relative;
+            background-image: url(../assets/starsLeft.png), url(../assets/starsRight.png), url(../assets/curleBack.png), ;
+            background-repeat: no-repeat;
+            background-size: 360px 184px, 360px 371px, cover;
+            background-position: left 3% top 118px, right 6% top 2px, center center;
+            .container {
+                .hero-wrapper {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Poppins;
+                    padding: 100px 223px 135px 223px;
+                    h1 {
+                        font-size: 40px;
+                        font-weight: 600;
+                        line-height: 56px;
+                        margin-bottom: 24px;
+                        span {
+                            color: #0086D6;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 153.5%; /* 27.63px */
+                    }
+                }
+            }
+        }
+        // .hero::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 360px;
+        //     height: 371px;
+        //     object-fit: cover;
+        //     top: 118px;
+        //     left: 5%;
+        //     z-index: 24;
+        //     background: url(../assets/starsLeft.png) 0 0 no-repeat;
+        //     transform: rotate(0);
+        // }
+        // .hero::before {
+        //     content: "";
+        //     position: absolute;
+        //     width: 360px;
+        //     height: 371px;
+        //     object-fit: cover;
+        //     top: 0;
+        //     right: 5%;
+        //     z-index: 24;
+        //     background: url(../assets/starsRight.png) 0 0 no-repeat;
+        //     transform: rotate(0);
+        // }
+        .growing {
+            .container {
+                .growing-wrapper {
+                    margin: 70px 0 75px 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2 {
+                        color: #333E44;
+                        font-family: Poppins;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 32px; /* 88.889% */
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        margin-bottom: 24px;
+                    }
+                    p {
+                        color: #475E69;
+                        text-align: center;
+                        font-family: Poppins;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 27px */
+                        width: 57ch;
+                    }
+                    .team-imgs {
+                        margin-top: 77px;
+                        position: relative;
+                        height: 505px;
+                        width: 821px;
+                        max-width: 100%;
+                        img {
+                            position: absolute;
+                        }
+                        img:nth-child(1) {
+                            top: 0;
+                            right: 130px;
+                            z-index: 4;
+                        }
+                        img:nth-child(2) {
+                            top: 191px;
+                            z-index: 6;
+                        }
+                        img:nth-child(3) {
+                            top: 201px;
+                            right: 0;
+                            z-index: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .employees {
+            .container {
+                h2 {
+                    color: #333E44;
+                    font-family: Poppins;
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 32px; /* 88.889% */
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                }
+                .team-subheading {
+                    color: #475E69;
+                    text-align: center;
+                    font-family: Poppins;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 150%; /* 27px */
+                }
+                .employee-cards {
+                    display: grid;
+                    column-gap: 79px;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    .employee {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .name {
+                            color: #1F2E35;
+                            font-family: Poppins;
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 24px; /* 100% */
+                            letter-spacing: 0.2px;
+                        }
+                        .position {
+                            color: #0086D6;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 27px; /* 168.75% */
+                            letter-spacing: 0.2px;
+                        }
+                        .description {
+                            color: #30444E;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 27px; /* 168.75% */
+                            letter-spacing: 0.2px;
+                        }
+                        .social-links {
+                            a {
+                                color: #1F2E35;
+                                font-family: Poppins;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 24px; /* 171.429% */
+                                letter-spacing: 0.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap");
 @import url(../styles/interFont.css);
-body .temporary .hero {
-  margin-top: 80px;
+body main .hero {
   background-color: #1F2E35;
   padding: 112px 0 112px 0;
 }
-body .temporary .hero .container .hero-in {
+body main .hero .container .hero-in {
   display: flex;
   justify-content: space-between;
 }
-body .temporary .hero .container .hero-in .hero-content {
+body main .hero .container .hero-in .hero-content {
   width: 48%;
 }
-body .temporary .hero .container .hero-in .hero-content .hero-h {
+body main .hero .container .hero-in .hero-content .hero-h {
   color: #FFF;
   font-family: Poppins;
   font-size: 40px;
@@ -21,7 +20,7 @@ body .temporary .hero .container .hero-in .hero-content .hero-h {
   letter-spacing: 0.2px;
   margin-bottom: 1rem;
 }
-body .temporary .hero .container .hero-in .hero-content .hero-p {
+body main .hero .container .hero-in .hero-content .hero-p {
   color: #FFF;
   font-family: Poppins;
   font-size: 18px;
@@ -30,7 +29,7 @@ body .temporary .hero .container .hero-in .hero-content .hero-p {
   letter-spacing: 0.2px;
   margin-bottom: 23px;
 }
-body .temporary .hero .container .hero-in .hero-content button {
+body main .hero .container .hero-in .hero-content button {
   color: #FFF;
   font-family: Poppins;
   font-size: 20px;
@@ -44,18 +43,18 @@ body .temporary .hero .container .hero-in .hero-content button {
   background: #0086D6;
   margin-bottom: 52px;
 }
-body .temporary .hero .container .hero-in .hero-content .users {
+body main .hero .container .hero-in .hero-content .users {
   display: flex;
   align-items: center;
 }
-body .temporary .hero .container .hero-in .hero-content .users .ovals {
+body main .hero .container .hero-in .hero-content .users .ovals {
   position: relative;
 }
-body .temporary .hero .container .hero-in .hero-content .users .ovals img:nth-child(2) {
+body main .hero .container .hero-in .hero-content .users .ovals img:nth-child(2) {
   position: absolute;
   left: 23px;
 }
-body .temporary .hero .container .hero-in .hero-content .users p {
+body main .hero .container .hero-in .hero-content .users p {
   display: inline-block;
   margin-left: 34px;
   color: #FFF;
@@ -64,11 +63,11 @@ body .temporary .hero .container .hero-in .hero-content .users p {
   font-weight: 400;
   line-height: normal;
 }
-body .temporary .hero .container .hero-in .hero-content .users p #user-num {
+body main .hero .container .hero-in .hero-content .users p #user-num {
   color: #0086D6;
   font-weight: 500;
 }
-body .temporary .hero .container .hero-in .logo-animations {
+body main .hero .container .hero-in .logo-animations {
   width: 39.2%;
   height: 446px;
   position: relative;
@@ -76,7 +75,7 @@ body .temporary .hero .container .hero-in .logo-animations {
   justify-content: center;
   align-items: center;
 }
-body .temporary .hero .container .hero-in .logo-animations .background-img {
+body main .hero .container .hero-in .logo-animations .background-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -85,18 +84,18 @@ body .temporary .hero .container .hero-in .logo-animations .background-img {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-body .temporary .hero .container .hero-in .logo-animations .centre {
+body main .hero .container .hero-in .logo-animations .centre {
   width: 140px;
   height: 155px;
   object-fit: cover;
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate {
   position: absolute;
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside {
   position: absolute;
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle {
   position: absolute;
   width: 102px;
   height: 102px;
@@ -107,54 +106,54 @@ body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .pseud
   left: 50%;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle img {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle img {
   width: 100%;
   height: 100%;
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate0 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate0 .on-circle {
   transform: translate(-50%, -110%) rotate(0deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 {
   transform: rotate(60deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 .on-circle {
   transform: translate(-50%, -110%) rotate(-60deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 {
   transform: rotate(120deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 .on-circle {
   transform: translate(-50%, -110%) rotate(-120deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 {
   transform: rotate(180deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 .on-circle {
   transform: translate(-50%, -110%) rotate(-180deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 {
   transform: rotate(240deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 .on-circle {
   transform: translate(-50%, -110%) rotate(-240deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 {
   transform: rotate(300deg);
 }
-body .temporary .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 .on-circle {
+body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 .on-circle {
   transform: translate(-50%, -110%) rotate(60deg);
 }
-body .temporary main .section-defaults .section-heading {
+body main .section-defaults .section-heading {
   color: #333E44;
 }
-body .temporary main .section-defaults .section-subheading {
+body main .section-defaults .section-subheading {
   color: #475E69;
 }
-body .temporary main .section-defaults .select-wrapper {
+body main .section-defaults .select-wrapper {
   display: flex;
   justify-content: center;
 }
-body .temporary main .section-defaults .select-wrapper .select-all {
+body main .section-defaults .select-wrapper .select-all {
   color: #FFF;
   font-family: Poppins;
   font-size: 20px;
@@ -167,19 +166,19 @@ body .temporary main .section-defaults .select-wrapper .select-all {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 7px 47px 6px 44px;
 }
-body .temporary main .popular-tools {
+body main .popular-tools {
   margin-top: 70px;
 }
-body .temporary main .popular-tools .container .statistics {
+body main .popular-tools .container .statistics {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
 }
-body .temporary main .popular-tools .container .statistics .statistic {
+body main .popular-tools .container .statistics .statistic {
   max-width: 100%;
   padding: 24px 49px 22px 49px;
 }
-body .temporary main .popular-tools .container .statistics .statistic .number {
+body main .popular-tools .container .statistics .statistic .number {
   text-align: center;
   color: #0086D6;
   font-family: Poppins;
@@ -188,7 +187,7 @@ body .temporary main .popular-tools .container .statistics .statistic .number {
   line-height: 150%;
   margin-bottom: 8px;
 }
-body .temporary main .popular-tools .container .statistics .statistic h3 {
+body main .popular-tools .container .statistics .statistic h3 {
   text-align: center;
   color: #333E44;
   font-family: Poppins;
@@ -198,7 +197,7 @@ body .temporary main .popular-tools .container .statistics .statistic h3 {
   line-height: 150%;
   margin-bottom: 1rem;
 }
-body .temporary main .popular-tools .container .statistics .statistic .statistic-text {
+body main .popular-tools .container .statistics .statistic .statistic-text {
   color: #475E69;
   text-align: center;
   font-family: Poppins;
@@ -207,67 +206,67 @@ body .temporary main .popular-tools .container .statistics .statistic .statistic
   line-height: 155%;
   /* 27.9px */
 }
-body .temporary main .popular-tools .container .statistics .statistic:nth-child(2) .number {
+body main .popular-tools .container .statistics .statistic:nth-child(2) .number {
   color: #2BA093;
 }
-body .temporary main .popular-tools .container .statistics .statistic:nth-child(3) .number {
+body main .popular-tools .container .statistics .statistic:nth-child(3) .number {
   color: #F36;
 }
-body .temporary main .popular-tools .container .popular {
+body main .popular-tools .container .popular {
   margin-top: 120px;
 }
-body .temporary main .popular-tools .container .popular .card-grid {
+body main .popular-tools .container .popular .card-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   column-gap: 1rem;
   margin: 42px 0 39px 0;
 }
-body .temporary main .popular-tools .container .popular .card-grid .card {
+body main .popular-tools .container .popular .card-grid .card {
   height: fit-content;
   align-self: center;
   width: 360px;
   max-width: 100%;
   padding: 20px 21px 21px 20px;
 }
-body .temporary main .popular-tools .container .popular .card-grid .card .card-body .card-heading {
+body main .popular-tools .container .popular .card-grid .card .card-body .card-heading {
   margin: 28px 0 8px 0;
 }
-body .temporary main .popular-tools .container .popular .card-grid .card .img-wrapper {
+body main .popular-tools .container .popular .card-grid .card .img-wrapper {
   border-radius: 5px;
   background: #F5F5F5;
   padding: 44px 0;
   display: flex;
   justify-content: center;
 }
-body .temporary main .popular-tools .container .popular .card-grid .middle {
+body main .popular-tools .container .popular .card-grid .middle {
   height: 100%;
   padding-bottom: 43px;
   width: 100%;
 }
-body .temporary main .comer-tools {
+body main .comer-tools {
   background: #F9F9F9;
 }
-body .temporary main .comer-tools .container .popular {
+body main .comer-tools .container .popular {
   padding: 50px 0 51px 0;
   margin-top: 79px;
 }
-body .temporary main .comer-tools .container .popular .card-grid {
+body main .comer-tools .container .popular .card-grid {
   margin: 53px 0 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 50px;
   column-gap: 50px;
 }
-body .temporary main .comer-tools .container .popular .card-grid .card {
+body main .comer-tools .container .popular .card-grid .card {
   display: flex;
   gap: 24px;
   align-items: center;
-  padding: 37px 23px 30px 24px;
+  padding: 24px 24px 29px 24px;
 }
-body .temporary main .comer-tools .container .popular .card-grid .card .card-body .card-heading {
+body main .comer-tools .container .popular .card-grid .card .card-body .card-heading {
   margin-bottom: 8px;
 }
-body .temporary main .comer-tools .container .popular .card-grid .card .img-wrapper {
+body main .comer-tools .container .popular .card-grid .card .img-wrapper {
   min-width: 120px;
   height: 120px;
   display: flex;
@@ -276,20 +275,20 @@ body .temporary main .comer-tools .container .popular .card-grid .card .img-wrap
   border-radius: 4px;
   background: #F5F5F5;
 }
-body .temporary main .comer-tools .container .popular .card-grid .card .marks .mark span {
+body main .comer-tools .container .popular .card-grid .card .marks .mark span {
   color: #335EF7;
 }
-body .temporary main .trusted {
+body main .trusted {
   padding: 88px 0 30px 0;
   margin-bottom: 50px;
 }
-body .temporary main .trusted .container .brands .brand-grid {
+body main .trusted .container .brands .brand-grid {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
 }
-body .temporary main .trusted .container .brands .brand-grid .brand {
+body main .trusted .container .brands .brand-grid .brand {
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -298,10 +297,10 @@ body .temporary main .trusted .container .brands .brand-grid .brand {
   align-items: center;
   justify-content: center;
 }
-body .temporary main .trusted .container .brands .brand-grid .brand img {
+body main .trusted .container .brands .brand-grid .brand img {
   margin-bottom: 20px;
 }
-body .temporary main .trusted .container .brands .brand-grid .brand p {
+body main .trusted .container .brands .brand-grid .brand p {
   color: #475E69;
   text-align: center;
   font-family: Inter;
@@ -312,24 +311,24 @@ body .temporary main .trusted .container .brands .brand-grid .brand p {
   /* 175% */
   letter-spacing: 0.3px;
 }
-body .temporary main .trusted .container .brands .brand-grid .brand:hover {
+body main .trusted .container .brands .brand-grid .brand:hover {
   border-radius: 8px;
   background: var(--Light-White, #FFF);
   box-shadow: 0px 8px 50px 0px rgba(0, 0, 0, 0.1);
 }
-body .temporary main .testimonials {
+body main .testimonials {
   background: #F9F9F9;
   padding: 50px 0 72px 0;
 }
-body .temporary main .testimonials .container .testimonials-body .section-subheading {
+body main .testimonials .container .testimonials-body .section-subheading {
   margin-bottom: 43px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid {
+body main .testimonials .container .testimonials-body .testimonial-grid {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   column-gap: 20px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial {
   height: fit-content;
   align-self: center;
   width: 360px;
@@ -340,10 +339,10 @@ body .temporary main .testimonials .container .testimonials-body .testimonial-gr
   background: var(--light-background, #FFF);
   box-shadow: 0px 16px 50px 0px rgba(0, 0, 0, 0.08);
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .stars {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .stars {
   margin-bottom: 21px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .testimonial-text {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .testimonial-text {
   color: #475E69;
   font-family: Poppins;
   font-size: 16px;
@@ -353,37 +352,37 @@ body .temporary main .testimonials .container .testimonials-body .testimonial-gr
   letter-spacing: 0.2px;
   margin-bottom: 10px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile img {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body {
   font-family: Poppins;
   line-height: 24px;
   /* 133.333% */
   letter-spacing: 0.2px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body .name {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body .name {
   color: #333E44;
   font-size: 18px;
   font-weight: 600;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body .profession {
+body main .testimonials .container .testimonials-body .testimonial-grid .testimonial .profile .profile-body .profession {
   color: #30444E;
   font-size: 14px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .middle {
+body main .testimonials .container .testimonials-body .testimonial-grid .middle {
   height: 100%;
   width: 100%;
   padding-bottom: 40px;
 }
-body .temporary main .testimonials .container .testimonials-body .testimonial-grid .middle .profile {
+body main .testimonials .container .testimonials-body .testimonial-grid .middle .profile {
   gap: 26px;
 }
 
