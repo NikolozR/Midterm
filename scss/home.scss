@@ -132,7 +132,7 @@ body {
                         .centre {
                             width: 31.5%;
                             height: 155px;
-                            object-fit: cover;
+                            object-fit: contain;
                         }
                         .on-circle-wrapper {
                             position: absolute;
@@ -237,13 +237,11 @@ body {
         }
         .popular-tools {
             margin-top: 70px;
-
             .container {
                 .statistics {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     column-gap: 30px;
-
                     .statistic {
                         max-width: 100%;
                         padding: 24px 49px 22px 49px;
@@ -298,7 +296,7 @@ body {
 
                     .card-grid {
                         display: grid;
-                        grid-template-columns: 1fr auto 1fr;
+                        grid-template-columns: 32.6% auto 32.6%;
                         column-gap: 1rem;
                         margin: 42px 0 39px 0;
 
@@ -336,11 +334,10 @@ body {
         }
         .comer-tools {
             background: #F9F9F9;
-
+            margin-top: 79px;
             .container {
                 .popular {
                     padding: 50px 0 51px 0;
-                    margin-top: 79px;
 
                     .card-grid {
                         margin: 53px 0 50px 0;
@@ -559,6 +556,208 @@ body {
     @include generateFixed(-300deg);
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1200px) {
+    body {
+        main {
+            .testimonials {
+                .container {
+                    .testimonials-body {
+                        .testimonial-grid {
+                            grid-template-columns: 32% auto 32%;
+                            .testimonial {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        main {
+            .hero {
+                padding: 105px 0 46px 0;
+                .container {
+                    .hero-in {
+                        flex-direction: column-reverse;
+                        align-items: center;
+                        .hero-content {
+                            width: 100%;
+                            margin-top: 60px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .hero-h, .hero-p {
+                                text-align: center;
+                                margin: 0;
+                            }
+                            .hero-p {
+                                margin-top: 22px;
+                            }
+                            button {
+                                width: fit-content;
+                                margin: 2rem 0;
+                            }
+                        }
+                        .logo-animations {
+                            width: 314px ;
+                            height: 314px;
+                            margin: 0 ;
+                            .on-circle-wrapper {
+                                .on-circle {
+                                    width: 72px;
+                                    height: 72px;
+                                    padding: 14.092px 16.203px 16.203px 14.092px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 984px) {
+    body {
+        main {
+            .popular-tools {
+                .container {
+                    .statistics {
+                        grid-template-columns: 1fr;
+                        row-gap: 1rem;
+                    }
+                    .popular {
+                        .card-grid {
+                            grid-template-columns: 1fr;
+                            row-gap: 2rem;
+                            margin: 50px 0;
+                            .card {
+                                width: 50%;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .comer-tools {
+                margin-top: 100px;
+                .container {
+                    .popular {
+                        .card-grid {
+                            grid-template-columns: 1fr;
+                            .card {
+                                display: block;
+                                width: 60%;
+                                margin: auto;
+                                padding: 0;
+                                .card-body {
+                                    padding: 2rem;
+                                }
+                                .img-wrapper {
+                                    height: 240px;
+                                    padding: 4rem 0;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .trusted {
+                padding-bottom: 23px;
+                margin-bottom: 70px;
+                .container {
+                    .brands {
+                        .brand-grid {
+                            grid-template-columns: 1fr;
+                            .brand:nth-child(1) {
+                                margin-bottom: 26px;
+                            }
+                            .brand:nth-child(2) {
+                                margin-bottom: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+            .testimonials {
+                .container {
+                    .testimonials-body {
+                        .testimonial-grid {
+                            grid-template-columns: 1fr;
+                            row-gap: 2rem;
+                            .testimonial {
+                                width: 96%;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        main {
+            .popular-tools {
+                .container {
+                    .popular {
+                        .card-grid {
+                            .card {
+                                width: 97%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    body {
+        main {
+            .section-defaults {
+                .section-subheading {
+                    font-size: 20px;
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+            .comer-tools {
+                .container {
+                    .popular {
+                        padding-bottom: 42px;
+                        .card-grid {
+                            row-gap: 2rem;
+                            .card {
+                                width: 86.2%;
+                                .card-body {
+                                    padding: 1rem;
+                                }
+                                .img-wrapper {
+                                    height: 180px;
+                                    padding: 40px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .testimonials {
+                padding-bottom: 102px;
+                .container {
+                    .testimonials-body {
+                        .section-subheading {
+                            margin-bottom: 2rem;
+                        }
+                        .testimonial-grid {
 
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

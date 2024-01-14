@@ -14,7 +14,6 @@ body {
 
             .container {
                 .main-nav {
-                    transition: height 500ms ease-in-out;
                     display: flex;
                     justify-content: space-between;
                     padding: 18px 0;
@@ -41,16 +40,6 @@ body {
                         .burger-icon-line:nth-child(2) {
                            transform: scaleX(50%);
                         }
-                    }
-                    input:checked ~ .menu-btns {
-                        display: flex;
-                        align-self: center;
-                        justify-self: center;
-                        transform: scaleY(100%);
-                        transform-origin: top;
-                        height: 100%;
-                        transition: transform 500ms ease-in-out;
-                        margin-top: 28px;
                     }
                     .menu-btns {
                         display: flex;
@@ -143,6 +132,16 @@ body {
                         label {
                             display: flex;
                             grid-area: burger;
+                        }
+                        input:checked ~ .menu-btns {
+                            display: flex;
+                            align-self: center;
+                            justify-self: center;
+                            transform: scaleY(100%);
+                            transform-origin: top;
+                            height: 100%;
+                            transition: transform 500ms ease-in-out;
+                            margin-top: 28px;
                         }
                         .menu-btns {
                             overflow-y: hidden;

@@ -91,7 +91,7 @@ body main .hero .container .hero-in .logo-animations .background-img {
 body main .hero .container .hero-in .logo-animations .centre {
   width: 31.5%;
   height: 155px;
-  object-fit: cover;
+  object-fit: contain;
 }
 body main .hero .container .hero-in .logo-animations .on-circle-wrapper {
   position: absolute;
@@ -271,7 +271,7 @@ body main .popular-tools .container .popular {
 }
 body main .popular-tools .container .popular .card-grid {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 32.6% auto 32.6%;
   column-gap: 1rem;
   margin: 42px 0 39px 0;
 }
@@ -299,10 +299,10 @@ body main .popular-tools .container .popular .card-grid .middle {
 }
 body main .comer-tools {
   background: #F9F9F9;
+  margin-top: 79px;
 }
 body main .comer-tools .container .popular {
   padding: 50px 0 51px 0;
-  margin-top: 79px;
 }
 body main .comer-tools .container .popular .card-grid {
   margin: 53px 0 50px 0;
@@ -542,6 +542,137 @@ body main .testimonials .container .testimonials-body .testimonial-grid .middle 
   }
   to {
     transform: translate(-50%, -39%) rotate(-660deg);
+  }
+}
+@media screen and (max-width: 1200px) {
+  body main .testimonials .container .testimonials-body .testimonial-grid {
+    grid-template-columns: 32% auto 32%;
+  }
+}
+@media screen and (max-width: 800px) {
+  body main .hero {
+    padding: 105px 0 46px 0;
+  }
+  body main .hero .container .hero-in {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  body main .hero .container .hero-in .hero-content {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .hero .container .hero-in .hero-content .hero-h, body main .hero .container .hero-in .hero-content .hero-p {
+    text-align: center;
+    margin: 0;
+  }
+  body main .hero .container .hero-in .hero-content .hero-p {
+    margin-top: 22px;
+  }
+  body main .hero .container .hero-in .hero-content button {
+    width: fit-content;
+    margin: 2rem 0;
+  }
+  body main .hero .container .hero-in .logo-animations {
+    width: 314px;
+    height: 314px;
+    margin: 0;
+  }
+  body main .hero .container .hero-in .logo-animations .on-circle-wrapper .on-circle {
+    width: 72px;
+    height: 72px;
+    padding: 14.092px 16.203px 16.203px 14.092px;
+  }
+}
+@media screen and (max-width: 984px) {
+  body main .popular-tools .container .statistics {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+  body main .popular-tools .container .popular .card-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin: 50px 0;
+  }
+  body main .popular-tools .container .popular .card-grid .card {
+    width: 50%;
+    margin: auto;
+  }
+  body main .comer-tools {
+    margin-top: 100px;
+  }
+  body main .comer-tools .container .popular .card-grid {
+    grid-template-columns: 1fr;
+  }
+  body main .comer-tools .container .popular .card-grid .card {
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+  }
+  body main .comer-tools .container .popular .card-grid .card .card-body {
+    padding: 2rem;
+  }
+  body main .comer-tools .container .popular .card-grid .card .img-wrapper {
+    height: 240px;
+    padding: 4rem 0;
+  }
+  body main .trusted {
+    padding-bottom: 23px;
+    margin-bottom: 70px;
+  }
+  body main .trusted .container .brands .brand-grid {
+    grid-template-columns: 1fr;
+  }
+  body main .trusted .container .brands .brand-grid .brand:nth-child(1) {
+    margin-bottom: 26px;
+  }
+  body main .trusted .container .brands .brand-grid .brand:nth-child(2) {
+    margin-bottom: 35px;
+  }
+  body main .testimonials .container .testimonials-body .testimonial-grid {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  body main .testimonials .container .testimonials-body .testimonial-grid .testimonial {
+    width: 96%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main .popular-tools .container .popular .card-grid .card {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body main .section-defaults .section-subheading {
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  body main .comer-tools .container .popular {
+    padding-bottom: 42px;
+  }
+  body main .comer-tools .container .popular .card-grid {
+    row-gap: 2rem;
+  }
+  body main .comer-tools .container .popular .card-grid .card {
+    width: 86.2%;
+  }
+  body main .comer-tools .container .popular .card-grid .card .card-body {
+    padding: 1rem;
+  }
+  body main .comer-tools .container .popular .card-grid .card .img-wrapper {
+    height: 180px;
+    padding: 40px 0;
+  }
+  body main .testimonials {
+    padding-bottom: 102px;
+  }
+  body main .testimonials .container .testimonials-body .section-subheading {
+    margin-bottom: 2rem;
   }
 }
 
