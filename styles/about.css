@@ -26,10 +26,12 @@ body main .hero .container .hero-wrapper h1 span {
 body main .hero .container .hero-wrapper p {
   font-size: 18px;
   font-weight: 400;
-  line-height: 153.5%; /* 27.63px */
+  line-height: 153.5%;
+}
+body main .growing {
+  margin: 70px 0 125px 0;
 }
 body main .growing .container .growing-wrapper {
-  margin: 70px 0 75px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,6 +81,9 @@ body main .growing .container .growing-wrapper .team-imgs img:nth-child(3) {
   right: 0;
   z-index: 0;
 }
+body main .employees {
+  margin-bottom: 88px;
+}
 body main .employees .container h2 {
   color: #333E44;
   font-family: Poppins;
@@ -87,6 +92,7 @@ body main .employees .container h2 {
   line-height: 32px; /* 88.889% */
   letter-spacing: 0.2px;
   text-align: center;
+  margin-bottom: 1rem;
 }
 body main .employees .container .team-subheading {
   color: #475E69;
@@ -97,6 +103,7 @@ body main .employees .container .team-subheading {
   line-height: 150%; /* 27px */
 }
 body main .employees .container .employee-cards {
+  margin-top: 50px;
   display: grid;
   column-gap: 79px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -108,6 +115,7 @@ body main .employees .container .employee-cards .employee {
   align-items: center;
 }
 body main .employees .container .employee-cards .employee .name {
+  margin: 1.5rem 0 0.5rem 0;
   color: #1F2E35;
   font-family: Poppins;
   font-size: 24px;
@@ -123,6 +131,7 @@ body main .employees .container .employee-cards .employee .position {
   font-weight: 400;
   line-height: 27px; /* 168.75% */
   letter-spacing: 0.2px;
+  margin-bottom: 12px;
 }
 body main .employees .container .employee-cards .employee .description {
   color: #30444E;
@@ -133,6 +142,10 @@ body main .employees .container .employee-cards .employee .description {
   font-weight: 400;
   line-height: 27px; /* 168.75% */
   letter-spacing: 0.2px;
+  margin-bottom: 0.5rem;
+}
+body main .employees .container .employee-cards .employee .social-links {
+  margin-top: auto;
 }
 body main .employees .container .employee-cards .employee .social-links a {
   color: #1F2E35;

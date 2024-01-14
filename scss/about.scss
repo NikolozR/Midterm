@@ -28,11 +28,15 @@ body {
                     p {
                         font-size: 18px;
                         font-weight: 400;
-                        line-height: 153.5%; /* 27.63px */
+                        line-height: 153.5%;
                     }
                 }
             }
         }
+        // !!!!!!!!!!!!!!!!
+        // ANOTHER WAY TO DO DOUBLE BACKGROUND IMG STYLE
+        // !!!!!!!!!!!!!!!
+        //
         // .hero::after {
         //     content: "";
         //     position: absolute;
@@ -57,10 +61,12 @@ body {
         //     background: url(../assets/starsRight.png) 0 0 no-repeat;
         //     transform: rotate(0);
         // }
+
+
         .growing {
+            margin: 70px 0 125px 0;
             .container {
                 .growing-wrapper {
-                    margin: 70px 0 75px 0;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -113,6 +119,7 @@ body {
             }
         }
         .employees {
+            margin-bottom: 88px;
             .container {
                 h2 {
                     color: #333E44;
@@ -122,6 +129,7 @@ body {
                     line-height: 32px; /* 88.889% */
                     letter-spacing: 0.2px;
                     text-align: center;
+                    margin-bottom: 1rem;
                 }
                 .team-subheading {
                     color: #475E69;
@@ -132,6 +140,7 @@ body {
                     line-height: 150%; /* 27px */
                 }
                 .employee-cards {
+                    margin-top: 50px;
                     display: grid;
                     column-gap: 79px;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -141,6 +150,7 @@ body {
                         flex-direction: column;
                         align-items: center;
                         .name {
+                            margin: 1.5rem 0 0.5rem 0;
                             color: #1F2E35;
                             font-family: Poppins;
                             font-size: 24px;
@@ -156,6 +166,7 @@ body {
                             font-weight: 400;
                             line-height: 27px; /* 168.75% */
                             letter-spacing: 0.2px;
+                            margin-bottom: 12px;
                         }
                         .description {
                             color: #30444E;
@@ -166,8 +177,10 @@ body {
                             font-weight: 400;
                             line-height: 27px; /* 168.75% */
                             letter-spacing: 0.2px;
+                            margin-bottom: 0.5rem;
                         }
                         .social-links {
+                            margin-top: auto;
                             a {
                                 color: #1F2E35;
                                 font-family: Poppins;

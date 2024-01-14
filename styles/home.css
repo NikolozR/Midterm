@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Outfit:wght@700&family=Poppins&family=Press+Start+2P&display=swap");
 @import url(../styles/interFont.css);
 body main .hero {
+  overflow: hidden;
   background-color: #1F2E35;
   padding: 112px 0 112px 0;
 }
@@ -69,7 +70,7 @@ body main .hero .container .hero-in .hero-content .users p #user-num {
 }
 body main .hero .container .hero-in .logo-animations {
   width: 39.2%;
-  height: 446px;
+  margin-right: 26px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -77,6 +78,9 @@ body main .hero .container .hero-in .logo-animations {
 }
 body main .hero .container .hero-in .logo-animations .background-img {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   top: 0;
   right: 0;
   animation-name: rotateL;
@@ -85,63 +89,113 @@ body main .hero .container .hero-in .logo-animations .background-img {
   animation-timing-function: linear;
 }
 body main .hero .container .hero-in .logo-animations .centre {
-  width: 140px;
+  width: 31.5%;
   height: 155px;
   object-fit: cover;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate {
+body main .hero .container .hero-in .logo-animations .on-circle-wrapper {
   position: absolute;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 413/420;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside {
-  position: absolute;
-}
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle {
+body main .hero .container .hero-in .logo-animations .on-circle-wrapper .on-circle {
   position: absolute;
   width: 102px;
   height: 102px;
   padding: 20px 23px;
   border-radius: 100px;
   background: #333E44;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
   top: 0;
   left: 50%;
-  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .pseudo-inside .on-circle img {
+body main .hero .container .hero-in .logo-animations .on-circle-wrapper .on-circle img {
   width: 100%;
   height: 100%;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate0 .on-circle {
-  transform: translate(-50%, -110%) rotate(0deg);
+body main .hero .container .hero-in .logo-animations .rotate0 {
+  animation-name: rotate0;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 {
+body main .hero .container .hero-in .logo-animations .rotate0 .on-circle {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation-name: fixed0;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+body main .hero .container .hero-in .logo-animations .rotate60 {
   transform: rotate(60deg);
+  animation-name: rotate60;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate60 .on-circle {
-  transform: translate(-50%, -110%) rotate(-60deg);
+body main .hero .container .hero-in .logo-animations .rotate60 .on-circle {
+  transform: translate(-50%, -50%) rotate(-60deg);
+  animation-name: fixed60;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 {
+body main .hero .container .hero-in .logo-animations .rotate120 {
   transform: rotate(120deg);
+  animation-name: rotate120;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate120 .on-circle {
-  transform: translate(-50%, -110%) rotate(-120deg);
+body main .hero .container .hero-in .logo-animations .rotate120 .on-circle {
+  transform: translate(-50%, -50%) rotate(-120deg);
+  animation-name: fixed120;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 {
+body main .hero .container .hero-in .logo-animations .rotate180 {
   transform: rotate(180deg);
+  animation-name: rotate180;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate180 .on-circle {
-  transform: translate(-50%, -110%) rotate(-180deg);
+body main .hero .container .hero-in .logo-animations .rotate180 .on-circle {
+  transform: translate(-50%, -50%) rotate(-180deg);
+  animation-name: fixed180;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 {
+body main .hero .container .hero-in .logo-animations .rotate240 {
   transform: rotate(240deg);
+  animation-name: rotate240;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate240 .on-circle {
-  transform: translate(-50%, -110%) rotate(-240deg);
+body main .hero .container .hero-in .logo-animations .rotate240 .on-circle {
+  transform: translate(-50%, -50%) rotate(-240deg);
+  animation-name: fixed240;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 {
+body main .hero .container .hero-in .logo-animations .rotate300 {
   transform: rotate(300deg);
+  animation-name: rotate300;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-body main .hero .container .hero-in .logo-animations .pseudo-rotate .rotate300 .on-circle {
-  transform: translate(-50%, -110%) rotate(60deg);
+body main .hero .container .hero-in .logo-animations .rotate300 .on-circle {
+  transform: translate(-50%, -50%) rotate(-300deg);
+  animation-name: fixed300;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body main .section-defaults .section-heading {
   color: #333E44;
@@ -392,6 +446,102 @@ body main .testimonials .container .testimonials-body .testimonial-grid .middle 
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes rotate0 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate60 {
+  from {
+    transform: rotate(60deg);
+  }
+  to {
+    transform: rotate(420deg);
+  }
+}
+@keyframes rotate120 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+@keyframes rotate180 {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+@keyframes rotate240 {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+@keyframes rotate300 {
+  from {
+    transform: rotate(300deg);
+  }
+  to {
+    transform: rotate(660deg);
+  }
+}
+@keyframes fixed0 {
+  from {
+    transform: translate(-50%, -39%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-360deg);
+  }
+}
+@keyframes fixed60 {
+  from {
+    transform: translate(-50%, -39%) rotate(-60deg);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-420deg);
+  }
+}
+@keyframes fixed120 {
+  from {
+    transform: translate(-50%, -39%) rotate(-120deg);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-480deg);
+  }
+}
+@keyframes fixed180 {
+  from {
+    transform: translate(-50%, -39%) rotate(-180deg);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-540deg);
+  }
+}
+@keyframes fixed240 {
+  from {
+    transform: translate(-50%, -39%) rotate(-240deg);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-600deg);
+  }
+}
+@keyframes fixed300 {
+  from {
+    transform: translate(-50%, -39%) rotate(-300deg);
+  }
+  to {
+    transform: translate(-50%, -39%) rotate(-660deg);
   }
 }
 

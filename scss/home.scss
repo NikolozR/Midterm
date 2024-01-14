@@ -7,7 +7,14 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
+@mixin generateFixed($deg) {
+    from {
+        transform: translate(-50%, -39%) rotate($deg);
+    }
+    to {
+        transform: translate(-50%, -39%) rotate($deg - 360deg);
+    }
+}
 @mixin generateRotate($deg) {
     from {
         transform: rotate($deg);
@@ -27,10 +34,10 @@ $black-grey: #3D3D3D;
 
 
 
-
 body {
     main {
         .hero {
+            overflow: hidden;
             background-color: $black;
             padding: 112px 0 112px 0;
 
@@ -38,9 +45,9 @@ body {
                 .hero-in {
                     display: flex;
                     justify-content: space-between;
-
                     .hero-content {
                         width: 48%;
+                        
 
                         .hero-h {
                             color: #FFF;
@@ -106,103 +113,100 @@ body {
                             }
                         }
                     }
-
                     .logo-animations {
                         width: 39.2%;
-                        height: 446px;
+                        margin-right: 26px;
                         position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
                         .background-img {
                             position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
                             top: 0;
                             right: 0;
                             @include generateLinearAnimation(rotateL);
                         }
-
                         .centre {
-                            width: 140px;
+                            width: 31.5%;
                             height: 155px;
                             object-fit: cover;
                         }
-
-                        .pseudo-rotate {
+                        .on-circle-wrapper {
                             position: absolute;
-
-                            .pseudo-inside {
+                            width: 100%;
+                            height: auto;
+                            aspect-ratio: 413 / 420;
+                            .on-circle {
                                 position: absolute;
-
-                                .on-circle {
-                                    position: absolute;
-                                    width: 102px;
-                                    height: 102px;
-                                    padding: 20px 23px;
-                                    border-radius: 100px;
-                                    background: #333E44;
-                                    top: 0;
-                                    left: 50%;
-                                    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
-
-                                    img {
-                                        width: 100%;
-                                        height: 100%;
-                                    }
+                                width: 102px;
+                                height: 102px;
+                                padding: 20px 23px;
+                                border-radius: 100px;
+                                background: #333E44;
+                                box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+                                top: 0;
+                                left: 50%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
                                 }
                             }
-
-                            .rotate0 {
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(0deg);
-                                }
+                        }
+                        .rotate0 {
+                            @include generateLinearAnimation(rotate0);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(0deg);
+                                @include generateLinearAnimation(fixed0);
                             }
-
-                            .rotate60 {
-                                transform: rotate(60deg);
-
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(-60deg);
-                                }
+                        }
+                        .rotate60 {
+                            transform: rotate(60deg);
+                            @include generateLinearAnimation(rotate60);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(-60deg);
+                                @include generateLinearAnimation(fixed60);
                             }
-
-                            .rotate120 {
-                                transform: rotate(120deg);
-
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(-120deg);
-                                }
+                        }
+                        .rotate120 {
+                            transform: rotate(120deg);
+                            @include generateLinearAnimation(rotate120);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(-120deg);
+                                @include generateLinearAnimation(fixed120);
                             }
+                        }
+                        .rotate180 {
+                            transform: rotate(180deg);  
+                            @include generateLinearAnimation(rotate180);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(-180deg);
+                                @include generateLinearAnimation(fixed180);
+                            }                          
+                        }
+                        .rotate240 {
+                            transform: rotate(240deg);
+                            @include generateLinearAnimation(rotate240);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(-240deg);
+                                @include generateLinearAnimation(fixed240);
 
-                            .rotate180 {
-                                transform: rotate(180deg);
-
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(-180deg);
-                                }
                             }
-
-                            .rotate240 {
-                                transform: rotate(240deg);
-
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(-240deg);
-                                }
-                            }
-
-                            .rotate300 {
-                                transform: rotate(300deg);
-
-                                .on-circle {
-                                    transform: translate(-50%, -110%) rotate(60deg);
-                                }
+                        }
+                        .rotate300 {
+                            transform: rotate(300deg);
+                            @include generateLinearAnimation(rotate300);
+                            .on-circle {
+                                transform: translate(-50%, -50%) rotate(-300deg);
+                                @include generateLinearAnimation(fixed300);
                             }
                         }
                     }
                 }
             }
         }
-
         .section-defaults {
             .section-heading {
                 color: #333E44;
@@ -231,7 +235,6 @@ body {
                 }
             }
         }
-
         .popular-tools {
             margin-top: 70px;
 
@@ -331,7 +334,6 @@ body {
                 }
             }
         }
-
         .comer-tools {
             background: #F9F9F9;
 
@@ -381,17 +383,12 @@ body {
                 }
             }
         }
-
         .trusted {
             padding: 88px 0 30px 0;
             margin-bottom: 50px;
 
             .container {
                 .brands {
-                    .section-heading {}
-
-                    .section-subheading {}
-
                     .brand-grid {
                         margin-top: 2rem;
                         display: grid;
@@ -433,7 +430,6 @@ body {
                 }
             }
         }
-
         .testimonials {
             background: #F9F9F9;
             padding: 50px 0 72px 0;
@@ -524,4 +520,45 @@ body {
 
 @keyframes rotateL {
     @include generateRotate(0);
+}
+
+@keyframes rotate0 {
+    @include generateRotate(0);
+}
+@keyframes rotate60 {
+    @include generateRotate(60deg);
+}
+@keyframes rotate120 {
+    @include generateRotate(120deg);
+}
+@keyframes rotate180 {
+    @include generateRotate(180deg);
+}
+@keyframes rotate240 {
+    @include generateRotate(240deg);
+}
+@keyframes rotate300 {
+    @include generateRotate(300deg);
+}
+@keyframes fixed0 {
+    @include generateFixed(0);
+}
+@keyframes fixed60 {
+    @include generateFixed(-60deg);
+}
+@keyframes fixed120 {
+    @include generateFixed(-120deg);
+}
+@keyframes fixed180 {
+    @include generateFixed(-180deg);
+}
+@keyframes fixed240 {
+    @include generateFixed(-240deg);
+}
+@keyframes fixed300 {
+    @include generateFixed(-300deg);
+}
+
+@media screen and (max-width: 1260px) {
+
 }

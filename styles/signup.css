@@ -103,4 +103,37 @@ body main .container .form-with-headings form .submit-already p {
   line-height: 20px; /* 142.857% */
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background: #1F2E35;
+  }
+  body main {
+    margin-top: 112px;
+  }
+  body main .container .form-with-headings h1 {
+    color: white;
+  }
+  body main .container .form-with-headings h4 {
+    color: #CAD0DB;
+  }
+  body main .container .form-with-headings form {
+    margin-top: 24px;
+  }
+  body main .container .form-with-headings form .name-surname {
+    display: block;
+  }
+  body main .container .form-with-headings form label {
+    padding-top: 1rem;
+  }
+  body main .container .form-with-headings form select {
+    background-color: white;
+  }
+  body main .container .form-with-headings form button {
+    width: 100%;
+  }
+  body main .container .form-with-headings form button + p {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=signup.css.map */

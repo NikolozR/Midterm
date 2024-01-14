@@ -3,6 +3,7 @@
 
 body {
     header {
+        width: 100%;
         nav {
             position: fixed;
             z-index: 100;
@@ -13,15 +14,48 @@ body {
 
             .container {
                 .main-nav {
+                    transition: height 500ms ease-in-out;
                     display: flex;
                     justify-content: space-between;
                     padding: 18px 0;
-
+                    input[type=checkbox] {
+                        display: none;
+                    }
+                    label {
+                        display: none;
+                        flex-direction: column;
+                        row-gap: 6px;
+                        justify-content: flex-end;
+                        cursor: pointer;
+                        .burger-icon-line {
+                            align-self: flex-end;
+                            width: 25px;
+                            height: 3px;
+                            background-color: white;
+                            transition: transform 400ms ease-in-out;
+                            transform-origin: right;
+                            border-radius: 2px;
+                        }
+                    }
+                    input:checked + label {
+                        .burger-icon-line:nth-child(2) {
+                           transform: scaleX(50%);
+                        }
+                    }
+                    input:checked ~ .menu-btns {
+                        display: flex;
+                        align-self: center;
+                        justify-self: center;
+                        transform: scaleY(100%);
+                        transform-origin: top;
+                        height: 100%;
+                        transition: transform 500ms ease-in-out;
+                        margin-top: 28px;
+                    }
                     .menu-btns {
                         display: flex;
                         gap: 89px;
                         align-items: center;
-
                         ul {
                             display: flex;
                             gap: 77px;
@@ -56,6 +90,80 @@ body {
                                 border-radius: 8px;
                                 background: #0086D6;
                                 padding: 10px 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes navAnimation {
+    from {
+        height: 0;
+    } to {
+        height: 100%;
+    }   
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        header {
+            nav {
+                .container {
+                    .main-nav {
+                        align-items: center;
+                        .menu-btns {
+                            gap: 2rem;
+                            .nav-ul {
+                                gap: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        header {
+            nav {
+                .container {
+                    .main-nav {
+                        display: grid;
+                        grid-template-areas: 
+                        "logo burger"
+                        "menu menu";
+                        .logo-a {
+                            grid-area: logo;
+                        }
+                        label {
+                            display: flex;
+                            grid-area: burger;
+                        }
+                        .menu-btns {
+                            overflow-y: hidden;
+                            height: 0;
+                            transform: scaleY(0);
+                            flex-direction: column;
+                            grid-area: menu;
+                            margin: auto;
+                            gap: 1rem;
+                            text-align: center;
+                            .nav-ul  {
+                                flex-direction: column;
+                                gap: inherit;
+                            }
+                            .btns {
+                                flex-direction: column;
+                                gap: inherit;
+                                a:nth-child(2) {
+                                    width: fit-content;
+                                    margin: auto;
+                                }
                             }
                         }
                     }

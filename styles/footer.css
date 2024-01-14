@@ -136,4 +136,42 @@ body footer .rights .container p {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+  body footer .main-footer .container .footer-content {
+    display: grid;
+    grid-template-areas: ". . ." "logos logos logos";
+    padding-bottom: 3rem;
+    row-gap: 2rem;
+  }
+  body footer .main-footer .container .footer-content .logos {
+    grid-area: logos;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  body footer .footer-subscription .container .section-defaults {
+    margin-bottom: 1.5rem !important;
+  }
+  body footer .footer-subscription .container .subscribe {
+    padding: 50px 0;
+  }
+  body footer .footer-subscription .container .subscribe form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  body footer .footer-subscription .container .subscribe form button {
+    margin: auto;
+  }
+  body footer .main-footer .container .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .main-footer .container .footer-content .logos {
+    align-items: flex-start;
+  }
+  body footer .main-footer .container .footer-content .legal, body footer .main-footer .container .footer-content .resource, body footer .main-footer .container .footer-content .office {
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

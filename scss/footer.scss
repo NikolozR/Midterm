@@ -171,3 +171,62 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    body {
+        footer {
+            .main-footer {
+                .container {
+                    .footer-content {
+                        display: grid;
+                        grid-template-areas: ". . ." "logos logos logos";
+                        padding-bottom: 3rem;
+                        row-gap: 2rem;
+                        .logos {
+                            grid-area: logos;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        footer {
+            .footer-subscription {
+                .container {
+                    .section-defaults {
+                        margin-bottom: 1.5rem !important;
+                    }
+                    .subscribe {
+                        padding: 50px 0;
+                        form {
+                            flex-direction: column;
+                            gap: 1rem;
+                            button {
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            .main-footer {
+                .container {
+                    .footer-content {
+                        display: flex;
+                        flex-direction: column;
+                        .logos {
+                            align-items: flex-start;
+                        }
+                        .legal, .resource, .office {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -6,10 +6,10 @@ body main {
 body main .hero {
   background-color: #1F2E35;
   padding: 156px 0;
-  background-image: url(../assets/dashboard.png), url(../assets/boards.png), url(../assets/chatbot.png);
+  background-image: url(../assets/groupRecs.png);
   background-repeat: no-repeat;
-  background-position: top 0 left 50%, top 176px left 11%, top 160px right 10%;
-  background-size: 43.5%;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 body main .hero .container h1, body main .hero .container h4, body main .hero .container a {
   color: #FFF;

@@ -108,3 +108,40 @@ body {
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        background: #1F2E35;
+        main {
+            margin-top: 112px;
+            .container {
+                .form-with-headings {
+                    h1 {
+                        color: white;
+                    }
+                    h4 {
+                        color: #CAD0DB;
+                    }
+                    form {
+                        margin-top: 24px;
+                        .name-surname {
+                            display: block;
+                        }
+                        label {
+                            padding-top: 1rem;
+                        }
+                        select {
+                            background-color: white;
+                        }
+                        button {
+                            width: 100%;
+                        }
+                        button + p {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
