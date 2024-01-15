@@ -90,6 +90,7 @@ body {
                         font-weight: 400;
                         line-height: 150%; /* 27px */
                         width: 57ch;
+                        max-width: 90%;
                     }
                     .team-imgs {
                         margin-top: 77px;
@@ -189,6 +190,182 @@ body {
                                 font-weight: 500;
                                 line-height: 24px; /* 171.429% */
                                 letter-spacing: 0.2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        main {
+            .hero {
+                background-image: url(../assets/curleBack.png);
+                background-position: 7% 165%;
+    background-size: 200% 100%;
+                .container {
+                    .hero-wrapper {
+                        padding: 67px 0px 110px 0px;
+                        h1 {
+                            font-size: 36px;
+                        }
+                        p {
+
+                        }
+                    }
+                }
+            }
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        .team-imgs {
+                            img {
+                                transform: scale(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        main {
+            margin-top: 70px;
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        h2 {
+                            font-size: 36px;
+                            margin-bottom: 16px;
+                        }
+                        .team-imgs {
+                            height: 300px;
+                            img {
+                                transform: scale(0.6);
+                            }
+                            img:nth-child(1) {
+                                right: 80px;
+                            }
+                            img:nth-child(2) {
+                                top: 110px;
+                            }
+                            img:nth-child(3) {
+                                top: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        main {
+            
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        .team-imgs {
+                            img {
+                            }
+                            img:nth-child(1) {
+                                right: 10%;
+                            }
+                            img:nth-child(2) {
+                                left: -10%;
+                            }
+                            img:nth-child(3) {
+                                right: -10%;
+                            }
+                        }
+                    }
+                }
+            }
+            .employees {
+                .container {
+                    .employee-cards {
+                        grid-template-columns: 1fr;
+                        row-gap: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    body {
+        main {
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        .team-imgs {
+                            img {
+                                transform: scale(0.5);
+                            }
+                            img:nth-child(1) {
+                                right: -10px;
+                            }
+                            img:nth-child(2) {
+                                left: -15%;
+                            }
+                            img:nth-child(3) {
+                                right: -15%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 490px) {
+    body {
+        main {
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        .team-imgs {
+                            img:nth-child(1) {
+                                right: -50px;
+                                transform: scale(0.5);
+                            }
+                            img:nth-child(2) {
+                                left: -25%;
+                                
+                            }
+                            img:nth-child(3) {
+                                right: -25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 440px) {
+    body {
+        main {
+            .growing {
+                .container {
+                    .growing-wrapper {
+                        .team-imgs {
+                            img:nth-child(1) {
+                                right: -70px;
+                                transform: scale(0.5);
+                            }
+                            img:nth-child(2) {
+                                left: -25%;
+                                
+                            }
+                            img:nth-child(3) {
+                                right: -25%;
                             }
                         }
                     }

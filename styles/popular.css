@@ -101,4 +101,38 @@ body main .most-popular .container .grid-nav input[type=radio]:checked + label {
   width: 40px;
 }
 
+@media screen and (max-width: 1000px) {
+  body main {
+    margin-top: 70px;
+  }
+  body main .most-popular .container .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 700px) {
+  body main .hero {
+    background-position: 50% 100% !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  body main .hero {
+    padding: 79px 0 162px 0;
+    background-image: url(../assets/responsiveBack.png);
+    background-repeat: no-repeat;
+    background-position: 50% calc(100% - 39px);
+  }
+  body main .hero .container .hero-wrapper h1 {
+    font-size: 36px;
+  }
+  body main .hero .container .hero-wrapper h4 {
+    margin-bottom: 2rem;
+  }
+  body main .most-popular .container .card-grid {
+    grid-template-columns: 1fr;
+  }
+  body main .most-popular .container .grid-nav {
+    margin-top: 50px;
+  }
+}
+
 /*# sourceMappingURL=popular.css.map */

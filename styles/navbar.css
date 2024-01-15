@@ -94,7 +94,11 @@ body header nav .container .main-nav .menu-btns .btns a {
   }
 }
 @media screen and (max-width: 800px) {
+  body header nav {
+    box-shadow: none;
+  }
   body header nav .container .main-nav {
+    padding: 13px 0;
     display: grid;
     grid-template-areas: "logo burger" "menu menu";
   }
@@ -114,6 +118,7 @@ body header nav .container .main-nav .menu-btns .btns a {
     height: 100%;
     transition: transform 500ms ease-in-out;
     margin-top: 28px;
+    padding-bottom: 39px;
   }
   body header nav .container .main-nav .menu-btns {
     overflow-y: hidden;

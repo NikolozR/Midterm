@@ -43,6 +43,7 @@ body main .hero .container .hero-in .hero-content button {
   border-radius: 8px;
   background: #0086D6;
   margin-bottom: 52px;
+  cursor: pointer;
 }
 body main .hero .container .hero-in .hero-content .users {
   display: flex;
@@ -550,8 +551,11 @@ body main .testimonials .container .testimonials-body .testimonial-grid .middle 
   }
 }
 @media screen and (max-width: 800px) {
+  body main {
+    margin-top: 70px;
+  }
   body main .hero {
-    padding: 105px 0 46px 0;
+    padding: 60px 0 46px 0;
   }
   body main .hero .container .hero-in {
     flex-direction: column-reverse;
@@ -567,6 +571,9 @@ body main .testimonials .container .testimonials-body .testimonial-grid .middle 
   body main .hero .container .hero-in .hero-content .hero-h, body main .hero .container .hero-in .hero-content .hero-p {
     text-align: center;
     margin: 0;
+  }
+  body main .hero .container .hero-in .hero-content .hero-h {
+    font-size: 32px;
   }
   body main .hero .container .hero-in .hero-content .hero-p {
     margin-top: 22px;
@@ -591,10 +598,13 @@ body main .testimonials .container .testimonials-body .testimonial-grid .middle 
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }
+  body main .popular-tools .container .popular {
+    margin-top: 142px;
+  }
   body main .popular-tools .container .popular .card-grid {
     grid-template-columns: 1fr;
     row-gap: 2rem;
-    margin: 50px 0;
+    margin: 70px 0;
   }
   body main .popular-tools .container .popular .card-grid .card {
     width: 50%;

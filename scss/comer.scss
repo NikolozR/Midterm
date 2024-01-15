@@ -126,3 +126,81 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1080px) {
+    body {
+        main {
+            margin: 70px 0 45px 0;
+            .hero {
+                .sub-hero {
+                    .container {
+                        .hero-wrapper {
+                            h1 {
+                                font-size: 36px;
+                            }
+                            h4 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .new-comer {
+                .container {
+                    .card-grid {
+                        grid-template-columns: 1fr;
+                        row-gap: 2rem;
+                        margin-bottom: 0;
+                        .card {
+                            width: 50%;
+                            margin: auto;
+                            display: block;
+                            padding: 0;
+                            
+                            .img-wrapper {
+                                height: 180px;
+                                padding: 40px 0;
+                            }
+                            .card-body {
+                                padding: 1rem 1rem 1.5rem 1rem;
+                                .card-heading {
+                                    h3 {
+                                        font-size: 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .grid-nav {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        main {
+            .hero {
+                padding: 0;
+                .sub-hero {
+                    padding: 80px 14px 187px 14px;
+                    background-image: url(../assets/responsiveComerBack.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 0 calc(100% - 69px);
+                }
+            }
+            .new-comer {
+                .container {
+                    .card-grid {
+                        .card {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

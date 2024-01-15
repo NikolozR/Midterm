@@ -82,6 +82,7 @@ body {
                             border-radius: 8px;
                             background: #0086D6;
                             margin-bottom: 52px;
+                            cursor: pointer;
                         }
 
                         .users {
@@ -564,8 +565,6 @@ body {
                     .testimonials-body {
                         .testimonial-grid {
                             grid-template-columns: 32% auto 32%;
-                            .testimonial {
-                            }
                         }
                     }
                 }
@@ -576,8 +575,9 @@ body {
 @media screen and (max-width: 800px) {
     body {
         main {
+            margin-top: 70px;
             .hero {
-                padding: 105px 0 46px 0;
+                padding: 60px 0 46px 0;
                 .container {
                     .hero-in {
                         flex-direction: column-reverse;
@@ -591,6 +591,9 @@ body {
                             .hero-h, .hero-p {
                                 text-align: center;
                                 margin: 0;
+                            }
+                            .hero-h {
+                                font-size: 32px;
                             }
                             .hero-p {
                                 margin-top: 22px;
@@ -628,10 +631,11 @@ body {
                         row-gap: 1rem;
                     }
                     .popular {
+                        margin-top: 142px;
                         .card-grid {
                             grid-template-columns: 1fr;
                             row-gap: 2rem;
-                            margin: 50px 0;
+                            margin: 70px 0;
                             .card {
                                 width: 50%;
                                 margin: auto;

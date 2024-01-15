@@ -109,3 +109,60 @@ body {
         }
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        main {
+            margin-top: 70px;
+            .most-popular {
+                .container {
+                    .card-grid {
+                        grid-template-columns: 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 660px) and (max-width: 700px) {
+    body {
+        main {
+            .hero {
+                background-position: 50% 100% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    body {
+        main {
+            .hero {
+                padding: 79px 0 162px 0;
+                background-image: url(../assets/responsiveBack.png);
+                background-repeat: no-repeat;
+                background-position: 50% calc(100% - 39px);
+                .container {
+                    .hero-wrapper {
+                        h1 {
+                            font-size: 36px;
+                        }
+                        h4 {
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+            .most-popular {
+                .container {
+                    .card-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    .grid-nav {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
